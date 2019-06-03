@@ -1,0 +1,120 @@
+﻿<html>
+<head>
+    <title>Home</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #eaf0f9;
+        }
+
+        li {
+            float: left;
+            border-right: none;
+        }
+
+            li:last-child {
+                border-right: none;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #999a9b;
+                }
+
+        .active {
+            background-color: #dce4f2;
+        }
+
+        button {
+            background-color: #eaf0f9;
+            border: none;
+            padding: 15px 15px;
+        }
+
+        .button2 {
+            background-color: #DADADA;
+            width: 300px;
+            padding: 50px 90px;
+            font-size: 50px;
+            border-radius: 8px;
+            font-family: Segoe UI Light;
+        }
+
+        .button3 {
+            background-color: #EFE2DF;
+            width: 300px;
+            padding: 50px 90px;
+            font-size: 50px;
+            border-radius: 8px;
+            font-family: Segoe UI Light;
+        }
+
+        .button4 {
+            background-color: #D6F2D3;
+            width: 300px;
+            padding: 50px 90px;
+            font-size: 50px;
+            border-radius: 8px;
+            font-family: Segoe UI Light;
+        }
+
+        .button5 {
+            background-color: #f6f7cd;
+            width: 300px;
+            padding: 50px 50px;
+            font-size: 50px;
+            border-radius: 8px;
+            font-family: Segoe UI Light;
+        }
+    </style>
+</head>
+<body style="font-family:Segoe UI Light;background-color:#dce4f2;">
+    <p id="demo"></p>
+    <ul>
+        <li><a class="active" href="#home"><img src="ho.png"></a></li>
+        <li><a href="t2.aspx"><img src="user1.png"></a></li>
+        <li><a href="your_songs.html"><img src="heart.png"></a></li>
+        <li><button class="button" onclick="Rate()"><img src="rate.png"></button></li>
+        <li style="float:right"><button class="button"><img src="question.png"></a></li>
+    </ul>
+    <br><br><br>
+    <center><div style="font-family:Segoe UI; font-size:50px;"><font color="white">Explore new songs & Add them to your playlist!</center></div></font>
+    <div align="center">
+        <br><br><br>
+        <table>
+            <tr><td>
+            <tr>
+                <td><button class="button button2" onclick="window.location.href='rock.html'">Rock</button></td>
+                <td><button class="button button3" onclick="window.location.href='pop.html'">Pop</button></td>
+            </tr>
+            <tr>
+                <td><button class="button button4" onclick="window.location.href='jazz.html'">Jazz</button></td>
+                <td><button class="button button5" onclick="window.location.href='classic.html'">Classical</button></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+function Rate() {
+  var rate = prompt("rate the website from 1-5");
+  if(rate>3&&rate<6)
+  {
+    alert(":)");
+  }
+  else
+  {
+    alert(":(");
+  }
+}
+    </script>
+</body>
+</html>
